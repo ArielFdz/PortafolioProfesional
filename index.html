@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portafolio Web</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="icon" type="image/x-icon" href="./img/c_sharp_icon_213045.ico">
+    <script src="./script.js" defer></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" />
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css" />
+    <script type="text/javascript" defer>
+        $(document).ready(function () {
+            $(".owl-carousel").owlCarousel({
+                items: 3,
+                autoplay: true,
+                margin: 30,
+                loop: true,
+                autoplayHoverPause: true,
+                dots: true
+            });
+        });
+    </script>
+</head>
+
+<body>
+
+    <header class="main-heading">
+        <nav class="navbar">
+            <div class="navbar-container container">
+                <input type="checkbox">
+                <div class="hamburger-lines">
+                    <span class="line line1"></span>
+                    <span class="line line2"></span>
+                    <span class="line line3"></span>
+                </div>
+                <ul class="nav-items">
+                    <li class="nav-item"><a href="#">Inicio</a></li>
+                    <li class="nav-item"><a href="#about">Acerca de</a></li>
+                    <li class="nav-item"><a href="#category">Educación</a></li>
+                    <li class="nav-item"><a href="#skills">Skills</a></li>
+                    <li class="nav-item"><a href="#projects">Proyectos</a></li>
+                </ul>
+                <div>
+                    <h1 class="logo">Ariel Fernández </h1><span>Fullstack Developer</span>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <section class="showcase" id="showcase">
+        <div class="showcase-content container">
+            <h1 class="lg-heading">¿Quién soy yo?</h1>
+            <p>Solo siendo libres esta vida será vida</p>
+            <a href="#about" class="btn btn-primary">Conóceme</a>
+        </div>
+    </section>
+
+    <section class="about" id="about">
+        <div class="about-content container">
+            <div class="about-text">
+                <p class="small">Acerca de mí</p>
+                <h2><span id="typed-element"></span></h2>
+                <p style="margin-top: 5%; margin-bottom: 5%;">¡Hola! Soy Ariel, un apasionado desarrollador Full Stack con un enfoque especializado en tecnologías de 
+                    Microsoft para la web. Mi fascinación por el desarrollo backend me impulsa a crear 
+                    soluciones robustas y escalables que potencien la experiencia del usuario. 
+                    Con años de experiencia en el desarrollo de aplicaciones web, me especializo 
+                    en aprovechar al máximo las herramientas y frameworks de Microsoft para construir 
+                    productos innovadores y de alto rendimiento. Mi objetivo es fusionar la eficiencia 
+                    del backend con la elegancia del frontend para ofrecer experiencias web extraordinarias. 
+                    ¡Bienvenido a mi mundo digital!.
+                </p>
+                <a href="#projects" class="btn btn-primary" id="projects-btn">Proyectos</a>
+                <a href="./img/CV_FernándezAriel.pdf" target="_blank" class="btn btn-primary">Currículum</a>
+
+            </div>
+            <div class="about-img">
+                <img src="./img/me.jpeg" alt="About image of food">
+            </div>
+        </div>
+    </section>
+
+    <section class="category" id="category">
+        <h1>Educación Profesional</h1>
+        <div class="category-container container">
+            <div class="">
+                <div class="">
+                    <img src="./img/fmat.png" alt="">
+                    <div class="about-escuela">
+                        <h2>Licenciatura en Ingeniería de Software</h2>
+                        <p>Estudiante de 8vo semestre de la carrera de Ingeniería en Software 
+                            por la Facultad de Matemáticas de la Universidad Autónoma de Yucatán.
+                            He tomado varios cursos de UDEMY a lo largo de mi carrera profesional, dentro 
+                            de los 3 mas destacables podemos encontrar uno de .NET Core, React y SQLServer. 
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="menu" id="skills">
+        <h2 class="tech-menu-heading">Skills</h2>
+        <div class="tech-menu-container container">
+            <div class="tech-menu-item">
+                <div class="food-image">
+                    <img src="./img/javascript_logo.svg" alt="">
+                </div>
+            </div>
+            <div class="tech-menu-item">
+                <div class="food-image">
+                    <img src="./img/csharp.svg" alt="">
+                </div>
+            </div>
+            <div class="tech-menu-item">
+                <div class="food-image">
+                    <img src="./img/css3.svg" alt="">
+                </div>
+
+            </div>
+            <div class="tech-menu-item">
+                <div class="food-image">
+                    <img src="./img/dotnet.svg" alt="">
+                </div>
+            </div>
+
+
+        </div>
+        <div class="tech-menu-container container">
+            <div class="tech-menu-item">
+                <div class="food-image">
+                    <img src="./img/html.png" alt="">
+                </div>
+
+            </div>
+            <div class="tech-menu-item">
+                <div class="food-image">
+                    <img src="./img/java.svg" alt="">
+                </div>
+            </div>
+            <div class="tech-menu-item">
+                <div class="food-image">
+                    <img src="./img/microsoft-sql-server-logo.svg" alt="">
+                </div>
+
+            </div>
+            <div class="tech-menu-item">
+                <div class="food-image">
+                    <img src="./img/xml.svg" alt="">
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <section id="projects">
+        <div class="section-padding">
+            <div class="container">
+                <div>
+                    <div>
+                        <div class="section-heading">
+                            <h1>Mis Proyectos</h1>
+                        </div>
+                    </div>
+                </div>
+                <br />
+                <div>
+                    <div>
+                        <div class="owl-carousel project-carousel">
+                            <div class="single-project-item">
+                                <img src="./img/repositorio.png"/>
+                                <br>
+                                <p>
+                                    Aquí realicé la instalación, configuración y diseño de un 
+                                    repositorio para la Facultad de Matemáticas UADY. Se realizó usando
+                                    DSpace, XMl y CSS3
+                                </p>
+                                <br>
+                                <h3>Repositorio FMAT<span>Techonlogías usadas:</span></h3>
+                                <div class="tech-stack">
+                                    <img src="./img/xml.svg" />
+                                    <img src="./img/dspace.jpeg" />
+                                    <img src="./img/css3.svg" />
+                                </div>
+                            </div>
+                            <div class="single-project-item">
+                                <img src="./img/pcshare.jpeg" />
+                                <br>
+                                <p>
+                                    Sitio Web en donde las personas publican fotografías de sus PCs y decriben
+                                    sus características.
+                                </p>
+                                <br>
+                                <h3>PC Share <span>Tecnologías usadas:</span></h3>
+                                <div class="tech-stack">
+                                    <img src="./img/javascript_logo.svg" />
+                                    <img src="./img/css3.svg" />
+                                    <img src="./img/html.png" />
+                                </div>
+                            </div>
+                            <div class="single-project-item">
+                                <img src="./img/multiplayergame.jpeg" />
+                                <br>
+                                <p>
+                                    Un juego multijugador tipo Kahoot usando Websockets con
+                                    javascript y front con svelte.
+                                </p>
+                                <br>
+                                <h3>Multiplayer Game <span>Tecnologías usadas:</span></h3>
+                                <div class="tech-stack">
+                                    <img src="./img/javascript_logo.svg" />
+                                    <img src="./img/css3.svg" />
+                                    <img src="./img/html.png" />
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="social-links">
+                <a href="https://github.com/ArielFdz" class="social-link" target="_blank"><i
+                        class="fa-brands fa-2x fa-github text-light"></i></a>
+                <a href="https://twitter.com/HorusAF13" class="social-link" target="_blank"><i
+                        class="fa-brands fa-2x fa-twitter text-light"></i></a>
+                <a href="https://www.linkedin.com/in/ariel-fernández-44b334279/" class="social-link" target="_blank"><i
+                        class="fa-brands fa-2x fa-linkedin-in text-light"></i></a>
+            </div>
+            <p class="text-light">Copyrights &copy; 2024 Ariel Fernández. Todos los derechos reservados</p>
+        </div>
+    </footer>
+
+    <script src="https://kit.fontawesome.com/5ade97e8eb.js" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+
+    <!-- Setup and start animation! -->
+    <script>
+        var typed = new Typed('#typed-element', {
+            strings: ['Frontend Developer', 'Backend Developer'],
+            typeSpeed: 100,
+        });
+    </script>
+
+</body>
+
+</html>
